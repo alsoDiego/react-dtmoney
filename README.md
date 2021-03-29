@@ -1,5 +1,8 @@
 # DT.Money
 
+![image](https://user-images.githubusercontent.com/68669255/112905027-24c5de80-90c0-11eb-9c5f-878389dfff89.png)
+
+
 ## Install Dependencies
 yarn create react-app react-dtmoney --template typescript
 yarn add styled-components
