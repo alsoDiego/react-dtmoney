@@ -2,8 +2,8 @@
 
 ## Install Dependencies
 yarn create react-app react-dtmoney --template typescript
-
-
+yarn add styled-components
+yarn add @types/styled-components -D
 
 
 # ===========================================
