@@ -3,16 +3,16 @@
 ![image](https://user-images.githubusercontent.com/68669255/112905027-24c5de80-90c0-11eb-9c5f-878389dfff89.png)
 
 
-## Install Dependencies
+## Dependencies
 yarn create react-app react-dtmoney --template typescript
 yarn add styled-components
 yarn add @types/styled-components -D
 yarn add miragejs
 yarn add axios
+yarn add react-modal
+yarn add @types/react-modal
 
-# ===========================================
 # == Getting Started with Create React App ==
-# ===========================================
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
