@@ -11,6 +11,7 @@ yarn add miragejs
 yarn add axios
 yarn add react-modal
 yarn add @types/react-modal
+yarn add polished
 
 # == Getting Started with Create React App ==
 
