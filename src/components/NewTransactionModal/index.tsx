@@ -5,6 +5,7 @@ import outcomeImg from '../../assets/outcome.svg'
 import closeImg from '../../assets/close.svg';
 
 import { Container, TransactionTypeContainer, RadioBox } from './styles';
+import { api } from '../../services/api';
 
 interface NewTransactionModalProps {
     isOpen: boolean;
@@ -21,6 +22,15 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
 // Prevenir que o formulário tente fazer um redirecionamento após o submit
 function handleCreateNewTransaction(event: FormEvent) {
     event.preventDefault();
+
+    const data = {
+        title,
+        value,
+        category,
+        type
+    };
+
+    api.post('/transactions', data)
 }
 
     return (
@@ -49,7 +59,7 @@ function handleCreateNewTransaction(event: FormEvent) {
             <input
                 type="number"
                 placeholder='Valor'
-                value={title}
+                value={value}
                 onChange={event => setValue(Number(event.target.value))}
             />
 
